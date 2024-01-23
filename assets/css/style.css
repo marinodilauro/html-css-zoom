@@ -69,7 +69,7 @@ button {
 #site_main {
   background-color: grey;
   height: 90vh;
-  overflow-y: scroll;
+  overflow: hidden;
 }
 
 .view_buttons {

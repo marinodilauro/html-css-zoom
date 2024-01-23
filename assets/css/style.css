@@ -50,6 +50,18 @@ button {
   border-radius: 0.3rem;
 }
 
+.button_label {
+  padding: 0.2rem;
+}
+
+.column_button_label {
+  font-size: 0.8rem;
+}
+
+.fa-share-from-square {
+  color: var(--zoom-share_screen);
+}
+
 /* #endregion Common rules */
 
 /* #region Main */
@@ -57,7 +69,7 @@ button {
 #site_main {
   background-color: grey;
   height: 90vh;
-  /* overflow: hidden; */
+  overflow-y: scroll;
 }
 
 .view_buttons {
@@ -113,22 +125,17 @@ button {
   justify-content: space-between;
 }
 
-.audio_video_icons,
+.audio_video_icons {
+  gap: 0.5rem;
+}
+
 .manage_conference_icons {
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .audio_video_icons {
 
   padding-left: 1rem;
-}
-
-.column_button_label {
-  font-size: 0.8rem;
-}
-
-.fa-share-from-square {
-  color: var(--zoom-share_screen);
 }
 
 .end_meeting {

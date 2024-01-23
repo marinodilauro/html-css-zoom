@@ -21,6 +21,14 @@
   align-items: center;
 }
 
+.column_button {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  font-size: 1.5rem;
+}
+
 /* #endregion Utilities */
 
 /* #region Common rules */
@@ -99,9 +107,39 @@ button {
 /* #region Action Bar */
 
 .action_bar {
-  padding-top: 1rem;
+  color: var(--zoom-lighter);
   height: 10vh;
   background-color: var(--zoom-dark);
+  justify-content: space-between;
+}
+
+.audio_video_icons,
+.manage_conference_icons {
+  gap: 1rem;
+}
+
+.audio_video_icons {
+
+  padding-left: 1rem;
+}
+
+.column_button_label {
+  font-size: 0.8rem;
+}
+
+.fa-share-from-square {
+  color: var(--zoom-share_screen);
+}
+
+.end_meeting {
+  height: 100%;
+}
+
+.end_meeting_button {
+  color: var(--zoom-end_meeting);
+  height: 100%;
+  padding: 1rem;
+  border-radius: 0;
 }
 
 /* #endregion Action Bar */

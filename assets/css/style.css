@@ -2,12 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px dashed; */
 }
 
 :root {
   --zoom-site_background: rgba(0, 0, 0, 1);
-  --zoom-unsername_background: rgba(0, 0, 0, 0.2);
+  --zoom-unsername_background: rgba(0, 0, 0, 0.5);
   --zoom-light: rgba(34, 34, 34, 1);
   --zoom-lighter: rgba(255, 255, 255, 1);
   --zoom-end_meeting: rgba(255, 0, 0, 1);
@@ -19,7 +18,8 @@ body {
 }
 
 img {
-  max-width: 100%
+  max-width: 100%;
+  object-fit: cover;
 }
 
 /* #region Main */
@@ -28,27 +28,26 @@ img {
   background-color: grey;
   width: 100%;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
-.conference_room {
+.container {
   width: 90%;
+  max-width: 1600px;
   margin: auto;
-  padding: 4rem 0 2rem 0;
-  flex-grow: 1;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -1rem;
-  margin-right: -1rem;
+  margin-left: -0.2rem;
+  margin-right: -0.2rem;
 }
 
 .col {
   width: calc((100% / 12) * 1.7);
-  padding: 0.5rem;
+  padding: 0.5rem 0.2rem;
 }
 
 .webcam_section {
@@ -60,9 +59,8 @@ img {
   background-color: var(--zoom-unsername_background);
   color: var(--zoom-lighter);
   font-size: 0.8rem;
-  ;
   position: absolute;
-  top: 80%;
+  top: 77%;
   left: 0%;
   padding: 0.3rem;
   gap: 0.5rem;
@@ -70,10 +68,6 @@ img {
 
 /* #region Action Bar */
 
-.action_bar {
-  background-color: var(--zoom-light);
-  height: 150px;
-}
 
 /* #endregion Action Bar */
 
